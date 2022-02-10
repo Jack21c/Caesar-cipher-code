@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DHWidget</class>
+ <widget class="QWidget" name="DHWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>0</y>
+     <width>460</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 30px;
+color: black;
+font: 600;</string>
+   </property>
+   <property name="text">
+    <string>Протокол Диффи — Хеллмана</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="Line" name="vLine2">
+   <property name="geometry">
+    <rect>
+     <x>398</x>
+     <y>250</y>
+     <width>4</width>
+     <height>540</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="titleAlisa">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>400</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 30px;
+color: black;</string>
+   </property>
+   <property name="text">
+    <string>Алиса</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="titleBob">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>60</y>
+     <width>400</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 30px;
+color: black;</string>
+   </property>
+   <property name="text">
+    <string>Боб</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_a">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>110</y>
+     <width>110</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Введите a:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_g">
+   <property name="geometry">
+    <rect>
+     <x>116</x>
+     <y>110</y>
+     <width>110</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Введите g:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_p">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>110</y>
+     <width>110</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Введите p:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_a">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>130</y>
+     <width>110</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_g">
+   <property name="geometry">
+    <rect>
+     <x>116</x>
+     <y>130</y>
+     <width>110</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_p">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>130</y>
+     <width>110</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_b">
+   <property name="geometry">
+    <rect>
+     <x>404</x>
+     <y>110</y>
+     <width>110</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Введите b:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_b">
+   <property name="geometry">
+    <rect>
+     <x>404</x>
+     <y>130</y>
+     <width>110</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendData">
+   <property name="geometry">
+    <rect>
+     <x>325</x>
+     <y>190</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Отправить данные</string>
+   </property>
+  </widget>
+  <widget class="Line" name="hLine1">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>248</y>
+     <width>800</width>
+     <height>4</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelA">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>275</y>
+     <width>350</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Число A, которое Алиса отправляет Бобу:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelB">
+   <property name="geometry">
+    <rect>
+     <x>404</x>
+     <y>275</y>
+     <width>350</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Число B, которое Боб отправляет Алисе:</string>
+   </property>
+  </widget>
+  <widget class="Line" name="hLine2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>383</y>
+     <width>800</width>
+     <height>4</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelKBob">
+   <property name="geometry">
+    <rect>
+     <x>404</x>
+     <y>410</y>
+     <width>350</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ключ К, который получил Боб:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelKAlisa">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>410</y>
+     <width>350</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ключ К, который получила Алиса:</string>
+   </property>
+  </widget>
+  <widget class="Line" name="vLine1">
+   <property name="geometry">
+    <rect>
+     <x>398</x>
+     <y>100</y>
+     <width>4</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="showA">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>295</y>
+     <width>110</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="showB">
+   <property name="geometry">
+    <rect>
+     <x>404</x>
+     <y>295</y>
+     <width>110</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="showKAlisa">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>430</y>
+     <width>110</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="showKBob">
+   <property name="geometry">
+    <rect>
+     <x>404</x>
+     <y>430</y>
+     <width>110</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>705</x>
+     <y>560</y>
+     <width>90</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Назад</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

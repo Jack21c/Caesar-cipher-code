@@ -2,7 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "cesar.h"
+#include "cesarwidget.h"
+#include "dhwidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,16 +18,14 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_openFile_triggered();
+    void on_cesarButton_clicked();
 
-
-
-    void on_encrypt_triggered();
-
-    void on_decrypt_triggered();
+    void on_dhButton_clicked();
 
 private:
     Ui::MainWindow *ui;
-    Ces *cesar;
+    CesarWidget cw;
+    DHWidget dhw;
+
 };
 #endif // MAINWINDOW_H

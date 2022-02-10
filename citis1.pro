@@ -10,14 +10,22 @@ CONFIG += c++11
 
 SOURCES += \
     cesar.cpp \
+    cesarwidget.cpp \
+    dhkeys.cpp \
+    dhwidget.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     cesar.h \
+    cesarwidget.h \
+    dhkeys.h \
+    dhwidget.h \
     mainwindow.h
 
 FORMS += \
+    cesarwidget.ui \
+    dhwidget.ui \
     mainwindow.ui
 
 TRANSLATIONS += \
